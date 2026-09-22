@@ -2,7 +2,6 @@
 
 import { useEffect } from "react";
 
-// Memunculkan elemen bertanda data-reveal satu per satu saat terlihat di layar.
 export default function Reveal() {
   useEffect(() => {
     const items = document.querySelectorAll("[data-reveal]");

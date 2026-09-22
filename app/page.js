@@ -71,7 +71,7 @@ export default function Home() {
 
       <a className="skip" href="#konten">Lewati ke konten</a>
 
-      {/* ================= NAV ================= */}
+      {/* NAV */}
       <header className="nav">
         <div className="wrap nav-inner">
           <a href="#beranda" className="logo" aria-label="Beranda">{profile.initials}</a>
@@ -89,7 +89,7 @@ export default function Home() {
       </header>
 
       <main id="konten">
-        {/* ================= HERO ================= */}
+        {/* HERO */}
         <section className="hero" id="beranda">
           <div className="wrap hero-grid">
             <div className="hero-text">
@@ -113,7 +113,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ================= TENTANG SAYA ================= */}
+        {/* TENTANG SAYA */}
         <section className="section" id="tentang" aria-labelledby="judul-tentang">
           <div className="wrap">
             <header className="section-head center" data-reveal>
@@ -136,7 +136,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ================= BAHASA PEMROGRAMAN ================= */}
+        {/* BAHASA PEMROGRAMAN */}
         <section className="section section-tight" id="bahasa" aria-labelledby="judul-bahasa">
           <div className="wrap">
             <header className="section-head center" data-reveal>
@@ -181,7 +181,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ================= PROYEK UNGGULAN ================= */}
+        {/* PROYEK UNGGULAN */}
         <section className="section" id="proyek" aria-labelledby="judul-unggulan">
           <div className="wrap">
             <header className="section-head center" data-reveal>
@@ -215,7 +215,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ================= PROYEK LAINNYA ================= */}
+        {/* PROYEK LAINNYA */}
         <section className="section section-tight" aria-labelledby="judul-lainnya">
           <div className="wrap">
             <header className="section-head center" data-reveal>
@@ -238,7 +238,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ================= PENGALAMAN, PENDIDIKAN, KEAHLIAN ================= */}
+        {/* PENGALAMAN, PENDIDIKAN, KEAHLIAN */}
         <section className="section section-tight" id="pengalaman" aria-labelledby="judul-pengalaman">
           <div className="wrap">
             <header className="section-head center" data-reveal>
@@ -291,7 +291,7 @@ export default function Home() {
         </section>
       </main>
 
-      {/* ================= KONTAK / FOOTER ================= */}
+      {/* KONTAK / FOOTER */}
       <footer className="footer" id="kontak">
         <div className="wrap">
           <div className="cta" data-reveal>
