@@ -20,27 +20,6 @@ function ProjectLink({ project, variant = "btn" }) {
   );
 }
 
-function Circuit({ className }) {
-  return (
-    <svg className={className} viewBox="0 0 420 300" fill="none" aria-hidden="true">
-      <g stroke="currentColor" strokeWidth="1.2">
-        <path d="M0 60 H120 L160 100 H300" />
-        <path d="M0 120 H80 L130 170 H260 L300 210 H420" />
-        <path d="M40 300 V230 L90 180" />
-        <path d="M200 0 V60 L240 100" />
-        <path d="M360 0 V80 L320 120 V170" />
-      </g>
-      <g fill="currentColor">
-        <circle cx="300" cy="100" r="3.5" />
-        <circle cx="90" cy="180" r="3.5" />
-        <circle cx="240" cy="100" r="3.5" />
-        <circle cx="320" cy="170" r="3.5" />
-        <circle cx="260" cy="170" r="3" />
-      </g>
-    </svg>
-  );
-}
-
 export default function Home() {
   const featured = projects.filter((p) => p.featured);
   const others = projects.filter((p) => !p.featured);
@@ -49,25 +28,11 @@ export default function Home() {
     <>
       <Reveal />
       <div className="backdrop" aria-hidden="true">
-        <span className="glow glow-red" />
-        <span className="glow glow-red-2" />
-        <span className="glow glow-red-3" />
-        <svg className="smoke-texture" preserveAspectRatio="none">
-          <filter id="asap">
-            <feTurbulence type="fractalNoise" baseFrequency="0.006 0.012" numOctaves="4" seed="7" />
-            <feColorMatrix values="0 0 0 0 0.55  0 0 0 0 0.08  0 0 0 0 0.1  0 0 0 1.4 -0.55" />
-          </filter>
-          <rect width="100%" height="100%" filter="url(#asap)" />
-        </svg>
-        <div className="smoke">
-          <span className="puff p1" />
-          <span className="puff p2" />
-          <span className="puff p3" />
-          <span className="puff p4" />
-          <span className="puff p5" />
-        </div>
-        <Circuit className="circuit circuit-a" />
+        <span className="orb orb-a" />
+        <span className="orb orb-b" />
+        <span className="orb orb-c" />
       </div>
+      <div className="progress" aria-hidden="true" />
 
       <a className="skip" href="#konten">Lewati ke konten</a>
 
@@ -93,21 +58,20 @@ export default function Home() {
         <section className="hero" id="beranda">
           <div className="wrap hero-grid">
             <div className="hero-text">
-              <p className="eyebrow load" style={{ "--i": 0 }}>{profile.eyebrow}</p>
-              <h1 className="hero-title load" style={{ "--i": 1 }}>{profile.headline}</h1>
-              <p className="hero-intro load" style={{ "--i": 2 }}>{profile.intro}</p>
-              <div className="hero-actions load" style={{ "--i": 3 }}>
+              <h1 className="hero-title load" style={{ "--i": 0 }}>{profile.headline}</h1>
+              <p className="hero-intro load" style={{ "--i": 1 }}>{profile.intro}</p>
+              <div className="hero-actions load" style={{ "--i": 2 }}>
                 <a className="btn btn-accent" href="#proyek">Lihat proyek</a>
                 <a className="btn btn-outline" href={profile.cvFile} download>
                   <Icon name="download" size={18} /> Unduh CV
                 </a>
               </div>
-              <p className="hero-loc load" style={{ "--i": 4 }}><Icon name="pin" size={16} /> {profile.location}</p>
+              <p className="hero-loc load" style={{ "--i": 3 }}><Icon name="pin" size={16} /> {profile.location}</p>
             </div>
 
             <div className="hero-visual load" style={{ "--i": 2 }}>
-              <span className="hero-blob" aria-hidden="true" />
-              <span className="dots" aria-hidden="true" />
+              <span className="hero-ring" aria-hidden="true" />
+              <span className="hero-ring hero-ring-2" aria-hidden="true" />
               <Portrait photo={profile.photo} name={profile.name} initials={profile.initials} />
             </div>
           </div>
