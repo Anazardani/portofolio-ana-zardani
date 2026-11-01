@@ -1,7 +1,6 @@
 export const profile = {
   name: "Ana Zardani",
   initials: "AZ",
-  eyebrow: "Web Developer, menuju IT Support",
   headline: "Membangun web yang rapi, dari tampilan sampai server.",
   intro:
     "Lulusan D3 Teknik Informatika Amikom. Terbiasa dengan Laravel, Yii2, dan Next.js, pernah meng-hosting aplikasi sendiri di VPS, dan sekarang sedang memperdalam jaringan serta Linux.",
